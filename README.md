@@ -188,9 +188,9 @@ b.name = 'Albert';
 ```js
 var user = { name: 'Alice', age: 15 };
 
-var customer = {
-  name: 'Bob',
-  age: 16
+var customer = { 
+  name: 'Bob', 
+  age: 16 
 };
 
 ```
@@ -215,10 +215,10 @@ var user = {name:'Alice',age: 15};
 ```js
 var os = [ 'Linux', 'Windows', 'Mac' ];
 
-var browsers = [
-  'Google Chrome',
-  'Firefox',
-  'Safari'
+var browsers = [ 
+  'Google Chrome', 
+  'Firefox', 
+  'Safari' 
 ];
 
 ```
@@ -283,7 +283,7 @@ while (keys.length) {
 
 ## Statements
 
-Your opening braces go on the same line as the statement.
+Your opening braces go on the same line as the statement. 
 
 *Good:*
 
@@ -301,17 +301,17 @@ if (isAudio(source)) {
 // Stroustrup style: https://en.wikipedia.org/wiki/Indent_style#Variant:_Stroustrup
 if (isAudio(source)) {
   return estimateAudio(source);
-}
+} 
 else if (isMovie(source)) {
   return estimateMovie(source);
 }
 
 // Allman style: https://en.wikipedia.org/wiki/Indent_style#Allman_style
-if (isAudio(source))
+if (isAudio(source)) 
 {
   return estimateAudio(source);
-}
-else if (isMovie(source))
+} 
+else if (isMovie(source)) 
 {
   return estimateMovie(source);
 }
@@ -439,7 +439,7 @@ keys when your interpreter complains:
 var fib = [ 1, 2, 3, 5, 8, 13 ];
 
 var hi = [
-  'hello',
+  'hello', 
   'world'
 ];
 
@@ -598,10 +598,10 @@ A copyright notice and author information are optional. File overviews are gener
 
 ```
 /**
- * @fileoverview Description of file, its uses and information
+ * Description of file, its uses and information
  * about its dependencies.
  * @creator: toanpc
- * @contributors: binhqd, ducl, thanhnt
+ * @contributors: binhqd, ducl, thanhnt 
  * Copyright 2015, Green Global Co.,Ltd.
  */
 ```
@@ -621,12 +621,12 @@ Example:
  * @example
  * let myClass = new MyAwesomeClass(foo, bar);
  */
-class MyAwesomeClass {
+class MyAwesomeClass {  
   /**
    * Constructor for my awesome class
    * @param {number} foo The foo for my awesome class
    * @param {string} bar The bar for my awesome class
-   */
+   */ 
   constructor(foo, bar) {...}
   /**
   * @emits {my.event} Emit an event
@@ -662,7 +662,7 @@ var myString = 'A rather long string of English text, an error message \
                 those Schwarzenegger shades)! Where was I? Oh yes, \
                 you\'ve got an error and all the extraneous whitespace is \
                 just gravy.  Have a nice day.';
-```
+```        
 
 The whitespace at the beginning of each line can't be safely stripped at compile time; whitespace after the slash will result in tricky errors; and while most script engines support this, it is not part of ECMAScript.
 
@@ -690,7 +690,7 @@ var myString = [
   'you\'ve got an error and all the extraneous whitespace is',
   'just gravy.  Have a nice day.'
 ].join(' ');
-
+  
 ```
 
 ### Use Template Literals in ES6
@@ -709,7 +709,7 @@ var myString = `A rather long string of English text, an error message
 
 ## Miscellaneous
 
-###Do not extend built-in prototypes
+### Do not extend built-in prototypes
 
 Do not extend the prototype of native JavaScript objects. Your future self will
 be forever grateful.
@@ -749,12 +749,12 @@ These statements should not be used.
 
 This style guide is inspired by what is popular within the community, and the best practices from:
 
-* [Google JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml)
-* [Node.js Style Guide](https://github.com/felixge/node-style-guide),
+* [Google JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml) 
+* [Node.js Style Guide](https://github.com/felixge/node-style-guide)
 * [npm's "funny" coding style](https://docs.npmjs.com/misc/coding-style)
 * [Douglas Crockford: Code Conventions for the JavaScript Programming Language](http://javascript.crockford.com/code.html)
 * [Addy Osmani: JavaScript Style Guides And Beautifiers](http://addyosmani.com/blog/javascript-style-guides-and-beautifiers/)
-* [ESLint recommended rules](http://eslint.org/docs/rules/).
+* [ESLint recommended rules](http://eslint.org/docs/rules/)
 
 
 ## In the end
@@ -764,4 +764,3 @@ BE CONSISTENT.
 If you're editing code, take a few minutes to look at the code around you and determine its style. If they use spaces around all their arithmetic operators, you should too. If their comments have little boxes of hash marks around them, make your comments have little boxes of hash marks around them too.
 
 The point of having style guidelines is to have a common vocabulary of coding so people can concentrate on what you're saying rather than on how you're saying it. We present global style rules here so people know the vocabulary, but local style is also important. If code you add to a file looks drastically different from the existing code around it, it throws readers out of their rhythm when they go to read it. Avoid this.
-
