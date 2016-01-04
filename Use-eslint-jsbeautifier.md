@@ -1,4 +1,4 @@
-# Use ESLint and JSBeautifier
+# Use ESLint and JSBeautify
 
 ## Table of contents
 
