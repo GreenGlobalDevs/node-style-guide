@@ -188,9 +188,9 @@ b.name = 'Albert';
 ```js
 var user = { name: 'Alice', age: 15 };
 
-var customer = { 
-  name: 'Bob', 
-  age: 16 
+var customer = {
+  name: 'Bob',
+  age: 16
 };
 
 ```
@@ -215,10 +215,10 @@ var user = {name:'Alice',age: 15};
 ```js
 var os = [ 'Linux', 'Windows', 'Mac' ];
 
-var browsers = [ 
-  'Google Chrome', 
-  'Firefox', 
-  'Safari' 
+var browsers = [
+  'Google Chrome',
+  'Firefox',
+  'Safari'
 ];
 
 ```
@@ -283,7 +283,7 @@ while (keys.length) {
 
 ## Statements
 
-Your opening braces go on the same line as the statement. 
+Your opening braces go on the same line as the statement.
 
 *Good:*
 
@@ -301,17 +301,17 @@ if (isAudio(source)) {
 // Stroustrup style: https://en.wikipedia.org/wiki/Indent_style#Variant:_Stroustrup
 if (isAudio(source)) {
   return estimateAudio(source);
-} 
+}
 else if (isMovie(source)) {
   return estimateMovie(source);
 }
 
 // Allman style: https://en.wikipedia.org/wiki/Indent_style#Allman_style
-if (isAudio(source)) 
+if (isAudio(source))
 {
   return estimateAudio(source);
-} 
-else if (isMovie(source)) 
+}
+else if (isMovie(source))
 {
   return estimateMovie(source);
 }
@@ -439,7 +439,7 @@ keys when your interpreter complains:
 var fib = [ 1, 2, 3, 5, 8, 13 ];
 
 var hi = [
-  'hello', 
+  'hello',
   'world'
 ];
 
@@ -601,7 +601,7 @@ A copyright notice and author information are optional. File overviews are gener
  * Description of file, its uses and information
  * about its dependencies.
  * @creator: toanpc
- * @contributors: binhqd, ducl, thanhnt 
+ * @contributors: binhqd, ducl, thanhnt
  * Copyright 2015, Green Global Co.,Ltd.
  */
 ```
@@ -626,7 +626,7 @@ class MyAwesomeClass {
    * Constructor for my awesome class
    * @param {number} foo The foo for my awesome class
    * @param {string} bar The bar for my awesome class
-   */ 
+   */
   constructor(foo, bar) {...}
   /**
   * @emits {my.event} Emit an event
@@ -690,7 +690,7 @@ var myString = [
   'you\'ve got an error and all the extraneous whitespace is',
   'just gravy.  Have a nice day.'
 ].join(' ');
-  
+
 ```
 
 ### Use Template Literals in ES6
@@ -749,7 +749,7 @@ These statements should not be used.
 
 This style guide is inspired by what is popular within the community, and the best practices from:
 
-* [Google JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml) 
+* [Google JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml)
 * [Node.js Style Guide](https://github.com/felixge/node-style-guide)
 * [npm's "funny" coding style](https://docs.npmjs.com/misc/coding-style)
 * [Douglas Crockford: Code Conventions for the JavaScript Programming Language](http://javascript.crockford.com/code.html)
