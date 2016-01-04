@@ -3,7 +3,7 @@
 ## Table of contents
 
 * [Install eslint ](#install-eslint)
-* [Install js-beautify](#install-js-beautify)
+* [Install js-beautify](#install-jsbeautify)
 * [Install Atom's plugins ](#install-atoms-plugins)
 * [Install Sublime Text's plugins](#install-sublime-texts-plugins)
 * [ESLint configuration](#set-eslints-config)
