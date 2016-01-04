@@ -58,7 +58,7 @@ Search and install atom-beautify:
 
 ## Install Sublime Text's plugins
 
-With Sublime Text, we also need 3 plugins: [SublimeLinter-contrib-eslint](https://github.com/roadhump/SublimeLinter-eslint), [SublimeLinter](http://www.sublimelinter.com/en/latest/installation.html) and  [Javascript Beautify](https://github.com/enginespot/js-beautify-sublime).
+With Sublime Text, we also need 3 plugins: [SublimeLinter](http://www.sublimelinter.com/en/latest/installation.html), [SublimeLinter-contrib-eslint](https://github.com/roadhump/SublimeLinter-eslint) and  [Javascript Beautify](https://github.com/enginespot/js-beautify-sublime).
 
 Because Sublime Text does not have built-in package management tool, we need Package Control plugin first. Please follow [the intructions here](https://packagecontrol.io/installation) to install if not yet.
 
