@@ -61,7 +61,7 @@ export var search = (cond, c) => {
         if(err){
           return reject(err);
         }
-        let arr = [];
+        let arr = []
         if(docs && docs.length>0){
         docs.forEach((item) => {
           arr.push(item);
@@ -71,6 +71,6 @@ export var search = (cond, c) => {
       })
       }).catch((e) => {
         return reject(e);
-      })
+      } )
   });
 }
