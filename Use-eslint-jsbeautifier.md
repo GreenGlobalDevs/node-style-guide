@@ -8,8 +8,6 @@
 * [linter-eslint's configuration](#set-eslints-config)
 * [atom-beautify's configuration](#set-jsbeautifiers-config)
 
-# *
-
 ## Install ESLint
 
 In order to install ESLint, you must have node.js already. So the first step is go to [nodejs.org](https://nodejs.org) and install latest node.js - 4.2 or 5.3. Rely on your platform, you can download .msi, .pkg or build from source.
