@@ -98,15 +98,15 @@ In the empty field, type "SublimeLinter", then click on the matched item.
 
 ![SublimeText - Install SublimeLinter](http://i.imgur.com/OCgHzdx.png)
 
-Do same thing with "SublimeLinter-contrib-eslint" and "Javascript Beautify".
+Do same thing with "SublimeLinter-contrib-eslint" and "JsFormat".
 
 Search and install SublimeLinter-contrib-eslint:
 
 ![Search and install SublimeLinter-contrib-eslint](http://i.imgur.com/6BMhzyB.png)
 
-Search and install Javascript Beautify:
+Search and install JsFormat:
 
-![Search and install Javascript Beautify](http://i.imgur.com/Oy7Z2xu.png)
+![Search and install JsFormat](http://i.imgur.com/BE54dW7.png)
 
 
 ## Set ESLint's config
