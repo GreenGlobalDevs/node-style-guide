@@ -7,14 +7,14 @@ Sau khi có style guide, bước tiếp theo chúng ta cần làm 2 việc:
 
 Để làm công việc này nhanh và chính xác, các bạn nên sử dụng tool tự động, linter và formatter.
 
-Thuật ngữ lint hay linter chỉ các công cụ hỗ trợ lập trình viên phát hiện nguy cơ tiềm ẩn khi soạn thảo mã nguồn. Linter đầu tiên tên trên thế giới do Stephen Curtis Johnson, một chuyên gia máy tính ở Bell Labs viết cho C vào khoảng năm 1977.
+Thuật ngữ [lint](https://en.wikipedia.org/wiki/Lint_(software)) hay linter chỉ các công cụ hỗ trợ lập trình viên phát hiện nguy cơ tiềm ẩn khi soạn thảo mã nguồn. [Linter đầu tiên](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.56.1841) tên trên thế giới do [Stephen Curtis Johnson](https://en.wikipedia.org/wiki/Stephen_C._Johnson), một chuyên gia máy tính ở Bell Labs viết cho C vào khoảng năm 1977.
 
-Linter đầu tiên được viết cho JavaScript là JSLint của Douglas Crockford, năm 2002. Công cụ này còn thô sơ, rất khó tính, chỉ hỗ trợ convension do tác giả của nó đưa ra. Về sau, một số tool khác xuất hiện, bắt đầu cho phép thiết lập convension theo ý muốn. Trong bài viết này, mình sẽ hướng dẫn các bạn sử dụng ESLint của Nicolas Zakas cho Sublime Text 3 và Atom 1.4.0 beta.
+Linter đầu tiên được viết cho JavaScript là [JSLint](http://www.jslint.com/help.html) của [Douglas Crockford](https://plus.google.com/+DouglasCrockfordEsq), năm 2002. Công cụ này còn thô sơ, rất khó tính, chỉ hỗ trợ convension do tác giả của nó đưa ra. Về sau, một số tool khác xuất hiện, bắt đầu cho phép thiết lập convension theo ý muốn. Trong bài viết này, mình sẽ hướng dẫn các bạn sử dụng [ESLint](http://eslint.org/) của [Nicholas Zakas](https://twitter.com/slicknet) cho [Sublime Text 3](http://www.sublimetext.com/3) và [Atom 1.4.0 beta](https://atom.io/beta).
 
 
 ## Cài đặt ESLint
 
-Để chạy được ESLint, máy tính của bạn phải có node.js, do đó bước đầu tiên các bạn cần làm là vào nodejs.org và tiến hành cài đặt phiên bản node.js mới nhất. Tùy theo hệ điều hành, các bạn có thể tải file .msi, .pkg hoặc build từ source.
+Để chạy được ESLint, máy tính của bạn phải có node.js, do đó bước đầu tiên các bạn cần làm là vào [nodejs.org](https://nodejs.org) và tiến hành cài đặt phiên bản node.js mới nhất. Tùy theo hệ điều hành, các bạn có thể tải file .msi, .pkg hoặc build từ source.
 
 Sau khi có node.js, chúng ta cài eslint:
 
@@ -43,7 +43,7 @@ Từ đây, quá trình cài đặt các plugin sẽ diễn ra tương đối gi
 
 ## Cài đặt các plugins cho Atom
 
-Chúng ta sẽ cần 3 plugins: linter, linter-eslint, và atom-beautify.
+Chúng ta sẽ cần 3 plugins: [linter](https://github.com/atom-community/linter), [linter-eslint](https://github.com/AtomLinter/linter-eslint), và [atom-beautify](https://github.com/Glavin001/atom-beautify).
 
 Vào Edit --> Preferences --> Install:
 
@@ -61,9 +61,9 @@ Làm tương tự với linter-eslint và atom-beautify.
 
 ## Thiết lập cấu hình cho ESLint
 
-Bây giờ, các bạn có thể dùng git để lấy xuống repository chứa các file cấu hình cần thiết.
+Bây giờ, các bạn có thể dùng git để lấy xuống repository chứa các file cấu hình cần thiết. Hoặc, [download file zip](https://github.com/GreenGlobalDevs/node-style-guide/archive/master.zip).
 
-Hoặc, có thể download file zip.
+[https://github.com/GreenGlobalDevs/node-style-guide](https://github.com/GreenGlobalDevs/node-style-guide)
 
 Trong đó, các bạn sẽ thấy 1 file ".eslintrc". Đây là file cấu hình của ESLint, nơi chúng ta quy định các rules sao cho khớp với convension. Chúng ta sẽ đặt file này ở thư mục gốc của mỗi dự án. Khi mở folder dự án bằng Atom hoặc Sublime Text, ESLint sẽ hoạt động.
 
