@@ -1,4 +1,4 @@
-# Use eslint and jsbeautifier to check and format code
+# Use ESLint and JSBeautifier
 
 ## Table of contents
 
@@ -6,7 +6,7 @@
 * [Install Atom's plugins ](#install-atoms-plugins)
 * Install Sublime Text's plugins
 * [linter-eslint's configuration](#set-eslints-config)
-* [atom-beautify's configuration](#thiết-lập-cấu-hình-cho-atom-beautify)
+* [atom-beautify's configuration](#set-jsbeautifiers-config)
 
 # *
 
