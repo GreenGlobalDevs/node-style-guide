@@ -3,14 +3,20 @@
 ## Table of contents
 
 * [Install eslint ](#install-eslint)
+* [Install js-beautify](#install-js-beautify)
 * [Install Atom's plugins ](#install-atoms-plugins)
 * [Install Sublime Text's plugins](#install-sublime-texts-plugins)
 * [ESLint configuration](#set-eslints-config)
 * [JSBeautify configuration](#set-jsbeautifys-config)
 
-## Install ESLint
+### ***
 
 In order to install ESLint, you must have node.js already. So the first step is go to [nodejs.org](https://nodejs.org) and install latest node.js - 4.2 or 5.3. Rely on your platform, you can download .msi, .pkg or build from source.
+
+ESLint and JSBeautify is the node.js packages that provide needed engine to check and format code. Primitively, they only have command line interface. But people can build GUI for them - in the format of plugins run on the source code editors like Atom and Sublime Text.
+
+
+## Install ESLint
 
 Once you have got node.js, it's easy to install eslint with npm command:
 
@@ -31,7 +37,28 @@ sudo npm install -g eslint
 ![Install eslint in Linux Mint 17.3](http://i.imgur.com/y4sxoN0.png)
 
 
-If everything is OK, let's start installing needed plugins.
+
+## Install JSBeautify
+
+Similar to eslint, we install js-beautify with npm command:
+
+Windows:
+
+```
+npm install -g js-beautify
+```
+
+Linux:
+
+```
+sudo npm -g install js-beautify
+```
+
+![Install js-beautify in Linux Mint 17.3](http://i.imgur.com/33XvRlX.png)
+
+
+Okay, if everything is OK, let's start installing needed plugins.
+
 
 ## Install Atom's plugins
 
