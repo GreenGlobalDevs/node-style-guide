@@ -14,7 +14,6 @@ This is a guide for writing consistent and aesthetically pleasing JavaScript cod
 * [Use === and !== Operators](#use--and--operators)
 * [Use {} and []](#use--and-)
 * [Require padding inside curly braces](#require-padding-inside-curly-braces)
-* [Require spacing inside array brackets](#require-spacing-inside-array-brackets)
 
 ### Naming
 * [Basic rules](#basic-rules)
@@ -161,14 +160,15 @@ if (a == '') {
 
 ### Use {} and []
 
-Use {} instead of new Object(). Use [] instead of new Array().
+* Use {} instead of new Object()
+* Use [] instead of new Array()
 
 Use arrays when the member names would be sequential integers. Use objects when the member names are arbitrary strings or names.
 
 *Good:*
 
 ```js
-var a = [ 1, 2, 3 ];
+var a = [1, 2, 3];
 var b = { name: 'Albert' };
 
 ```
@@ -188,9 +188,9 @@ b.name = 'Albert';
 ```js
 var user = { name: 'Alice', age: 15 };
 
-var customer = { 
-  name: 'Bob', 
-  age: 16 
+var customer = {
+  name: 'Bob',
+  age: 16
 };
 
 ```
@@ -205,34 +205,6 @@ var user = {name: 'Alice', age: 15};
 
 ```js
 var user = {name:'Alice',age: 15};
-```
-
-
-### Require spacing inside array brackets
-
-*Good:*
-
-```js
-var os = [ 'Linux', 'Windows', 'Mac' ];
-
-var browsers = [ 
-  'Google Chrome', 
-  'Firefox', 
-  'Safari' 
-];
-
-```
-
-*Bad:*
-
-```js
-var os = ['Linux', 'Windows', 'Mac'];
-```
-
-*Very bad:*
-
-```js
-var os = ['Linux','Windows','Mac'];
 ```
 
 ## Naming Conventions
@@ -256,8 +228,8 @@ lines.
 *Good:*
 
 ```js
-var keys = [ 'foo', 'bar' ];
-var values = [ 23, 42 ];
+var keys = ['foo', 'bar'];
+var values = [23, 42];
 
 var object = {};
 while (keys.length) {
@@ -269,8 +241,8 @@ while (keys.length) {
 *Bad:*
 
 ```js
-var keys = [ 'foo', 'bar' ],
-    values = [ 23, 42 ],
+var keys = ['foo', 'bar'],
+    values = [23, 42],
     object = {},
     key;
 
@@ -283,7 +255,7 @@ while (keys.length) {
 
 ## Statements
 
-Your opening braces go on the same line as the statement. 
+Your opening braces go on the same line as the statement.
 
 *Good:*
 
@@ -301,17 +273,17 @@ if (isAudio(source)) {
 // Stroustrup style: https://en.wikipedia.org/wiki/Indent_style#Variant:_Stroustrup
 if (isAudio(source)) {
   return estimateAudio(source);
-} 
+}
 else if (isMovie(source)) {
   return estimateMovie(source);
 }
 
 // Allman style: https://en.wikipedia.org/wiki/Indent_style#Allman_style
-if (isAudio(source)) 
+if (isAudio(source))
 {
   return estimateAudio(source);
-} 
-else if (isMovie(source)) 
+}
+else if (isMovie(source))
 {
   return estimateMovie(source);
 }
@@ -428,7 +400,7 @@ try {
 ```
 
 
-### Object / Array creation
+### Object creation
 
 Use trailing commas and put *short* declarations on a single line. Only quote
 keys when your interpreter complains:
@@ -436,13 +408,16 @@ keys when your interpreter complains:
 *Good:*
 
 ```js
+<<<<<<< HEAD
 var fib = [ 1, 2, 3, 5, 8, 13 ];
 
 var hi = [
-  'hello', 
+  'hello',
   'world'
 ];
 
+=======
+>>>>>>> f9ac9c30dd19af3580d393c4bdf3c8ec8378c7dc
 var fo = {
   good: 'code',
   'is generally': 'pretty',
@@ -601,7 +576,7 @@ A copyright notice and author information are optional. File overviews are gener
  * Description of file, its uses and information
  * about its dependencies.
  * @creator: toanpc
- * @contributors: binhqd, ducl, thanhnt 
+ * @contributors: binhqd, ducl, thanhnt
  * Copyright 2015, Green Global Co.,Ltd.
  */
 ```
@@ -626,7 +601,7 @@ class MyAwesomeClass {
    * Constructor for my awesome class
    * @param {number} foo The foo for my awesome class
    * @param {string} bar The bar for my awesome class
-   */ 
+   */
   constructor(foo, bar) {...}
   /**
   * @emits {my.event} Emit an event
@@ -690,7 +665,7 @@ var myString = [
   'you\'ve got an error and all the extraneous whitespace is',
   'just gravy.  Have a nice day.'
 ].join(' ');
-  
+
 ```
 
 ### Use Template Literals in ES6
@@ -749,7 +724,7 @@ These statements should not be used.
 
 This style guide is inspired by what is popular within the community, and the best practices from:
 
-* [Google JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml) 
+* [Google JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml)
 * [Node.js Style Guide](https://github.com/felixge/node-style-guide)
 * [npm's "funny" coding style](https://docs.npmjs.com/misc/coding-style)
 * [Douglas Crockford: Code Conventions for the JavaScript Programming Language](http://javascript.crockford.com/code.html)
