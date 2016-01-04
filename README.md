@@ -14,7 +14,6 @@ This is a guide for writing consistent and aesthetically pleasing JavaScript cod
 * [Use === and !== Operators](#use--and--operators)
 * [Use {} and []](#use--and-)
 * [Require padding inside curly braces](#require-padding-inside-curly-braces)
-* [Require spacing inside array brackets](#require-spacing-inside-array-brackets)
 
 ### Naming
 * [Basic rules](#basic-rules)
@@ -161,14 +160,15 @@ if (a == '') {
 
 ### Use {} and []
 
-Use {} instead of new Object(). Use [] instead of new Array().
+* Use {} instead of new Object()
+* Use [] instead of new Array()
 
 Use arrays when the member names would be sequential integers. Use objects when the member names are arbitrary strings or names.
 
 *Good:*
 
 ```js
-var a = [ 1, 2, 3 ];
+var a = [1, 2, 3];
 var b = { name: 'Albert' };
 
 ```
@@ -213,7 +213,7 @@ var user = {name:'Alice',age: 15};
 *Good:*
 
 ```js
-var os = [ 'Linux', 'Windows', 'Mac' ];
+var os = ['Linux', 'Windows', 'Mac'];
 
 var browsers = [ 
   'Google Chrome', 
@@ -226,13 +226,10 @@ var browsers = [
 *Bad:*
 
 ```js
-var os = ['Linux', 'Windows', 'Mac'];
-```
+var os = [ 'Linux', 'Windows', 'Mac' ];
 
-*Very bad:*
+var browsers = ['Google Chrome','Firefox','Safari'];
 
-```js
-var os = ['Linux','Windows','Mac'];
 ```
 
 ## Naming Conventions
@@ -256,8 +253,8 @@ lines.
 *Good:*
 
 ```js
-var keys = [ 'foo', 'bar' ];
-var values = [ 23, 42 ];
+var keys = ['foo', 'bar'];
+var values = [23, 42];
 
 var object = {};
 while (keys.length) {
@@ -269,8 +266,8 @@ while (keys.length) {
 *Bad:*
 
 ```js
-var keys = [ 'foo', 'bar' ],
-    values = [ 23, 42 ],
+var keys = ['foo', 'bar'],
+    values = [23, 42],
     object = {},
     key;
 
@@ -428,7 +425,7 @@ try {
 ```
 
 
-### Object / Array creation
+### Object creation
 
 Use trailing commas and put *short* declarations on a single line. Only quote
 keys when your interpreter complains:
@@ -436,13 +433,6 @@ keys when your interpreter complains:
 *Good:*
 
 ```js
-var fib = [ 1, 2, 3, 5, 8, 13 ];
-
-var hi = [
-  'hello', 
-  'world'
-];
-
 var fo = {
   good: 'code',
   'is generally': 'pretty',
