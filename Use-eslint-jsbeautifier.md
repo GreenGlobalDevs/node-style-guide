@@ -1,12 +1,12 @@
-# Use ESLint and JSBeautifier
+# Use ESLint and JSBeautify
 
 ## Table of contents
 
 * [Install eslint ](#install-eslint)
 * [Install Atom's plugins ](#install-atoms-plugins)
-* Install Sublime Text's plugins
-* [linter-eslint's configuration](#set-eslints-config)
-* [atom-beautify's configuration](#set-jsbeautifiers-config)
+* [Install Sublime Text's plugins](#install-sublime-texts-plugins)
+* [ESLint configuration](#set-eslints-config)
+* [JSBeautify configuration](#set-jsbeautifys-config)
 
 ## Install ESLint
 
@@ -41,15 +41,45 @@ Edit --> Preferences --> Install:
 
 ![Start installing](http://i.imgur.com/NIfXIwd.png)
 
-In the "Search packages" field, type "linter", then Enter, then scrollow to the package named "linter". Press "install" button at right side:
+In the "Search packages" field, type "linter", then Enter, then scroll down to the package named "linter". Press "install" button at right side:
 
 ![Search and install linter](http://i.imgur.com/9JDqM8j.png)
 
 Do same thing with linter-eslint and atom-beautify.
 
+Search and install linter-eslint:
+
 ![Search and install linter-eslint](http://i.imgur.com/4p6UYaK.png)
 
+Search and install atom-beautify:
+
 ![Search and install atom-beautify](http://i.imgur.com/frKAMBf.png)
+
+
+## Install Sublime Text's plugins
+
+With Sublime Text, we also need 3 plugins: [SublimeLinter-contrib-eslint](https://github.com/roadhump/SublimeLinter-eslint), [SublimeLinter](http://www.sublimelinter.com/en/latest/installation.html) and  [Javascript Beautify](https://github.com/enginespot/js-beautify-sublime).
+
+Because Sublime Text does not have built-in package management tool, we need Package Control plugin first. Please follow [the intructions here](https://packagecontrol.io/installation) to install if not yet.
+
+Then, from Sublime Text interface, press "Ctrl + Shift + P" to open Package Control menu, choose "Install Package". 
+
+![SublimeText - Install package](http://i.imgur.com/E7nxXcH.png)
+
+In the empty field, type "SublimeLinter", then click on the matched item.
+
+![SublimeText - Install SublimeLinter](http://i.imgur.com/OCgHzdx.png)
+
+Do same thing with "SublimeLinter-contrib-eslint" and "Javascript Beautify".
+
+Search and install SublimeLinter-contrib-eslint:
+
+![Search and install SublimeLinter-contrib-eslint](http://i.imgur.com/6BMhzyB.png)
+
+Search and install Javascript Beautify:
+
+![Search and install Javascript Beautify](http://i.imgur.com/Oy7Z2xu.png)
+
 
 ## Set ESLint's config
 
@@ -64,18 +94,22 @@ Now, you can get down the repository by using "git clone" command or, simpler, [
 
 The following figure, I open the project "node-style-guide" and "examples/bad.js", the result is really bad:
 
-![bad.js](http://i.imgur.com/hFoz5LS.png)
+![Atom: bad.js](http://i.imgur.com/hFoz5LS.png)
 
-What we need to do here is fix the code until no any red flag shows :)
+Sublime Text gives the same result:
 
-If the script file is too long, manual fixing may take a little time, you can use [atom-beautify](https://github.com/Glavin001/atom-beautify) that supports auto formatting.
+![Sublime Text: bad.js](http://i.imgur.com/YtU7lis.png)
+
+What we need to do here is fix the code until no any red flag appears :)
+
+If the script file is too long, manual fixing may take a little time, you can use [JSBeautify](https://github.com/beautify-web/js-beautify) that supports auto formatting.
 
 
-## Set JSBeautifier's config
+## Set JSBeautify's config
 
-In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc". This is config file used by atom-beautify plugin. Each time when you press "Ctrl + Alt + B" key combination, atom-beautify will reformat your source code. This plugin's ability is quite limit so it may leave some of the things that you need to fix by hand.
+In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc". This is config file used by atom-beautify plugin in Atom and JavaScript Beautify in Sublime Text. Each time when you press "Ctrl + Alt + B" key combination, these plugins can use JSBeautify core to reformat your source code. Unfortunately, this tool is not very powerful so it may leave some of the things that you need to fix by hand.
 
 
 ## Conclusion
 
-In short, to follow convention, we would need to add 2 config files - .eslintrc and .jsbeautifyrc - into the root of project folder. Thus, the plugins linter-eslint and atom-beautify will handle about 80% of of the work for you.
+In short, to follow convention, we would need to add 2 config files - .eslintrc and .jsbeautifyrc - into the root of project folder. Thus, the plugins of Atom and Sublime Text will handle about 80% of of the work for you.
