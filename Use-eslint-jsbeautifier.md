@@ -135,7 +135,7 @@ If the script file is too long, manual fixing may take a little time, you can us
 
 ## Set JSBeautify's config
 
-In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc". This is config file used by atom-beautify plugin in Atom and JavaScript Beautify in Sublime Text. Each time when you press "Ctrl + Alt + B" key combination, these plugins can use JSBeautify core to reformat your source code. Unfortunately, this tool is not very powerful so it may leave some of the things that you need to fix by hand.
+In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc". This is config file used by atom-beautify plugin in Atom and JavaScript Beautify in Sublime Text. Each time when you press "Ctrl + Alt + B" or "Ctrl + Alt + F" key combination, these plugins can use JSBeautify core to reformat your source code. Unfortunately, this tool is not very powerful so it may leave some of the things that you need to fix by hand.
 
 
 ## Conclusion
