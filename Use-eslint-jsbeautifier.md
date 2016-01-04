@@ -3,14 +3,21 @@
 ## Table of contents
 
 * [Install eslint ](#install-eslint)
+* [Install js-beautify](#install-jsbeautify)
 * [Install Atom's plugins ](#install-atoms-plugins)
 * [Install Sublime Text's plugins](#install-sublime-texts-plugins)
 * [ESLint configuration](#set-eslints-config)
 * [JSBeautify configuration](#set-jsbeautifys-config)
 
-## Install ESLint
+[![Use ESLint and JSBeautify with Atom and Sublime Text ](http://img.youtube.com/vi/hwmO5XAuDU0/0.jpg)](http://www.youtube.com/watch?v=hwmO5XAuDU0)
 
-In order to install ESLint, you must have node.js already. So the first step is go to [nodejs.org](https://nodejs.org) and install latest node.js - 4.2 or 5.3. Rely on your platform, you can download .msi, .pkg or build from source.
+
+ESLint and JSBeautify are the node.js packages that provide needed engine to check and format code. Primitively, they only have command line interface. But people can build GUI for them - in the format of plugins run on the source code editors like Atom and Sublime Text.
+
+In order to install ESLint and JSBeautify, you must have node.js already. So the first step is go to [nodejs.org](https://nodejs.org) and install latest node.js - 4.2 or 5.3. Rely on your platform, you can download .msi, .pkg or build from source.
+
+
+## Install ESLint
 
 Once you have got node.js, it's easy to install eslint with npm command:
 
@@ -31,7 +38,28 @@ sudo npm install -g eslint
 ![Install eslint in Linux Mint 17.3](http://i.imgur.com/y4sxoN0.png)
 
 
-If everything is OK, let's start installing needed plugins.
+
+## Install JSBeautify
+
+Similar to eslint, we install js-beautify with npm command:
+
+Windows:
+
+```
+npm install -g js-beautify
+```
+
+Linux:
+
+```
+sudo npm -g install js-beautify
+```
+
+![Install js-beautify in Linux Mint 17.3](http://i.imgur.com/33XvRlX.png)
+
+
+Okay, if everything is OK, let's start installing needed plugins.
+
 
 ## Install Atom's plugins
 
@@ -58,7 +86,7 @@ Search and install atom-beautify:
 
 ## Install Sublime Text's plugins
 
-With Sublime Text, we also need 3 plugins: [SublimeLinter](http://www.sublimelinter.com/en/latest/installation.html), [SublimeLinter-contrib-eslint](https://github.com/roadhump/SublimeLinter-eslint) and  [Javascript Beautify](https://github.com/enginespot/js-beautify-sublime).
+With Sublime Text, we also need 3 plugins: [SublimeLinter](http://www.sublimelinter.com/en/latest/installation.html), [SublimeLinter-contrib-eslint](https://github.com/roadhump/SublimeLinter-eslint) and  [JsFormat](https://github.com/jdc0589/JsFormat).
 
 Because Sublime Text does not have built-in package management tool, we need Package Control plugin first. Please follow [the intructions here](https://packagecontrol.io/installation) to install if not yet.
 
@@ -70,15 +98,15 @@ In the empty field, type "SublimeLinter", then click on the matched item.
 
 ![SublimeText - Install SublimeLinter](http://i.imgur.com/OCgHzdx.png)
 
-Do same thing with "SublimeLinter-contrib-eslint" and "Javascript Beautify".
+Do same thing with "SublimeLinter-contrib-eslint" and "JsFormat".
 
 Search and install SublimeLinter-contrib-eslint:
 
 ![Search and install SublimeLinter-contrib-eslint](http://i.imgur.com/6BMhzyB.png)
 
-Search and install Javascript Beautify:
+Search and install JsFormat:
 
-![Search and install Javascript Beautify](http://i.imgur.com/Oy7Z2xu.png)
+![Search and install JsFormat](http://i.imgur.com/BE54dW7.png)
 
 
 ## Set ESLint's config
