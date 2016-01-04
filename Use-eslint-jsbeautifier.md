@@ -1,20 +1,20 @@
-# Hướng dẫn sử dụng style guide
+# How to use JavaScript style guide
 
 ## Table of contents
 
-* [Cài đặt ESLint](#cài-đặt-eslint)
-* [Cài đặt các plugins cho Atom](#cài-đặt-các-plugins-cho-atom)
-* Cài đặt các plugins cho Sublime Text
-* [Thiết lập cấu hình cho linter-eslint](#thiết-lập-cấu-hình-cho-eslint)
-* [Thiết lập cấu hình cho atom-beautify](#thiết-lập-cấu-hình-cho-atom-beautify)
+* [Install eslint](#cài-đặt-eslint)
+* [Install Atom's plugins](#cài-đặt-các-plugins-cho-atom)
+* Install Sublime Text's plugins
+* [linter-eslint's configuration](#thiết-lập-cấu-hình-cho-eslint)
+* [atom-beautify's configuration](#thiết-lập-cấu-hình-cho-atom-beautify)
 
 #*
 
-## Cài đặt ESLint
+## Install ESLint
 
-Để chạy được ESLint, máy tính của bạn phải có node.js, do đó bước đầu tiên các bạn cần làm là vào [nodejs.org](https://nodejs.org) và tiến hành cài đặt phiên bản node.js mới nhất. Tùy theo hệ điều hành, các bạn có thể tải file .msi, .pkg hoặc build từ source.
+In order to install ESLint, you must have node.js already. So the first step is go to [nodejs.org](https://nodejs.org) and install latest node.js - 4.2 or 5.3. Rely on your platform, you can download .msi, .pkg or build from source.
 
-Sau khi có node.js, chúng ta cài eslint:
+Once you have got node.js, it's easy to install eslint with npm command:
 
 Windows:
 
@@ -33,53 +33,53 @@ sudo npm install -g eslint
 ![Install eslint in Linux Mint 17.3](http://i.imgur.com/y4sxoN0.png)
 
 
-Từ đây, quá trình cài đặt các plugin sẽ diễn ra tương đối giống nhau trên các hệ điều hành.
+If everything is OK, let's start installing needed plugins.
 
+## Install Atom's plugins
 
-*Note: _Vì hệ thống package của Sublime đang có issue nên mình sẽ bổ sung sau. Tạm thời chúng ta xem xét Atom trước._*
+We would need the following 3 plugins: [linter](https://github.com/atom-community/linter), [linter-eslint](https://github.com/AtomLinter/linter-eslint), and [atom-beautify](https://github.com/Glavin001/atom-beautify).
 
-
-## Cài đặt các plugins cho Atom
-
-Chúng ta sẽ cần 3 plugins: [linter](https://github.com/atom-community/linter), [linter-eslint](https://github.com/AtomLinter/linter-eslint), và [atom-beautify](https://github.com/Glavin001/atom-beautify).
-
-Vào Edit --> Preferences --> Install:
+Edit --> Preferences --> Install:
 
 ![Start installing](http://i.imgur.com/NIfXIwd.png)
 
-Trong ô "Search packages" gõ "linter", Enter, kéo xuống tìm đúng package có tên linter và nhấn install:
+In the "Search packages" field, type "linter", then Enter, then scrollow to the package named "linter". Press "install" button at right side:
 
 ![Search and install linter](http://i.imgur.com/9JDqM8j.png)
 
-Làm tương tự với linter-eslint và atom-beautify.
+Do same thing with linter-eslint and atom-beautify.
 
 ![Search and install linter-eslint](http://i.imgur.com/4p6UYaK.png)
 
 ![Search and install atom-beautify](http://i.imgur.com/frKAMBf.png)
 
-## Thiết lập cấu hình cho ESLint
+## Set ESLint's config
 
-Bây giờ, các bạn có thể dùng git để lấy xuống repository chứa các file cấu hình cần thiết. Hoặc, [download file zip](https://github.com/GreenGlobalDevs/node-style-guide/archive/master.zip).
+Now, please take a look at the repository below:
 
 [https://github.com/GreenGlobalDevs/node-style-guide](https://github.com/GreenGlobalDevs/node-style-guide)
 
-Trong đó, các bạn sẽ thấy 1 file ".eslintrc". Đây là file cấu hình của ESLint, nơi chúng ta quy định các rules sao cho khớp với convension. Chúng ta sẽ đặt file này ở thư mục gốc của mỗi dự án. Khi mở folder dự án bằng Atom hoặc Sublime Text, ESLint sẽ hoạt động.
+You can see here a file named ".eslintrc". This is ESLint's config file, where we declare the rules matching with our convension. We would place this file at the root folder of the project. When we open project's folder with Atom or Sublime Text, ESLint will do its task.
 
-Hình sau, mình mở thư mục dự án "node-style-guide" và file /examples/bad.js, kết quả rất tệ:
+
+Now, you can get down the repository by using "git clone" command or, simpler, [download it](https://github.com/GreenGlobalDevs/node-style-guide/archive/master.zip). Then, open it with Atom to and browse the JS files under /examples directory.
+
+The following figure, I open the project "node-style-guide" and "examples/bad.js", the result is really bad:
 
 ![bad.js](http://i.imgur.com/hFoz5LS.png)
 
+What we need to do here is fix the code until no any red flag shows :)
 
-Đến đây, chỉ cần sửa lại code sao cho không còn chấm đỏ nào nữa là được :D
-
-Nếu script quá dài, làm thủ công mất thời gian, chúng ta có thể dùng [atom-beautify](https://github.com/Glavin001/atom-beautify) hỗ trợ tự động format.
+If the script file is too long, manual fixing may take a little time, you can use [atom-beautify](https://github.com/Glavin001/atom-beautify) that supports auto formatting.
 
 
 ## Thiết lập cấu hình cho atom-beautify
 
-Cũng giống như eslint-linter, atom-beautify đọc cấu hình trong file ".jsbeautifyrc" ở gốc thư mục, mỗi khi bạn nhấn tổ hợp phím "Ctrl+Alt+B", plugin này sẽ định dạng lại  source code. Khả năng của atom-beautify khá giới hạn, nên có thể bạn vẫn phải sửa thêm bằng tay.
+In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc". This is config file used by atom-beautify. Each time when you press "Ctrl + Alt + B" key combination, atom-beautify will reformat your source code. This plugin's ability is quite limit so it may leave some of the things that you need to fix by hand.
 
 
-Tóm lại, để theo sát convension, chúng ta sẽ thêm 2 files cấu hình .eslintrc và .jsbeautifyrc vào gốc thư mục dự án. Sau đó, các plugins linter-eslint và atom-beautify sẽ giúp chúng ta xử lý khoảng 80% công việc chuẩn hóa.
+## Conclusion
+
+In short, to follow convension, we would need to add 2 config files - .eslintrc and .jsbeautifyrc - into the root of project folder. Thus, the plugins linter-eslint and atom-beautify will handle about 80% of of the work for you.
 
 
