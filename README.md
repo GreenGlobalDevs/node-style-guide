@@ -207,31 +207,6 @@ var user = {name: 'Alice', age: 15};
 var user = {name:'Alice',age: 15};
 ```
 
-
-### Require spacing inside array brackets
-
-*Good:*
-
-```js
-var os = ['Linux', 'Windows', 'Mac'];
-
-var browsers = [
-  'Google Chrome',
-  'Firefox',
-  'Safari'
-];
-
-```
-
-*Bad:*
-
-```js
-var os = [ 'Linux', 'Windows', 'Mac' ];
-
-var browsers = ['Google Chrome','Firefox','Safari'];
-
-```
-
 ## Naming Conventions
 
 ### Basic rules
