@@ -1,16 +1,14 @@
 # Hướng dẫn sử dụng style guide
 
-Sau khi có style guide, bước tiếp theo chúng ta cần làm 2 việc:
+## Table of contents
 
-- kiểm tra lại các file JavaScript của mình
-- sửa cho khớp với tiêu chuẩn
+* [Cài đặt ESLint](#cài-đặt-eslint)
+* [Cài đặt các plugins cho Atom](#cài-đặt-các-plugins-cho-atom)
+* Cài đặt các plugins cho Sublime Text
+* [Thiết lập cấu hình cho linter-eslint](#thiết-lập-cấu-hình-cho-eslint)
+* [Thiết lập cấu hình cho atom-beautify](#thiết-lập-cấu-hình-cho-atom-beautify)
 
-Để làm công việc này nhanh và chính xác, các bạn nên sử dụng tool tự động, linter và formatter.
-
-Thuật ngữ [lint](https://en.wikipedia.org/wiki/Lint_(software)) hay linter chỉ các công cụ hỗ trợ lập trình viên phát hiện nguy cơ tiềm ẩn khi soạn thảo mã nguồn. [Linter đầu tiên](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.56.1841) tên trên thế giới do [Stephen Curtis Johnson](https://en.wikipedia.org/wiki/Stephen_C._Johnson), một chuyên gia máy tính ở Bell Labs viết cho C vào khoảng năm 1977.
-
-Linter đầu tiên được viết cho JavaScript là [JSLint](http://www.jslint.com/help.html) của [Douglas Crockford](https://plus.google.com/+DouglasCrockfordEsq), năm 2002. Công cụ này còn thô sơ, rất khó tính, chỉ hỗ trợ convension do tác giả của nó đưa ra. Về sau, một số tool khác xuất hiện, bắt đầu cho phép thiết lập convension theo ý muốn. Trong bài viết này, mình sẽ hướng dẫn các bạn sử dụng [ESLint](http://eslint.org/) của [Nicholas Zakas](https://twitter.com/slicknet) cho [Sublime Text 3](http://www.sublimetext.com/3) và [Atom 1.4.0 beta](https://atom.io/beta).
-
+#*
 
 ## Cài đặt ESLint
 
