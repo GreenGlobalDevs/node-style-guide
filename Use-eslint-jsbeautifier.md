@@ -57,7 +57,7 @@ Now, please take a look at the repository below:
 
 [https://github.com/GreenGlobalDevs/node-style-guide](https://github.com/GreenGlobalDevs/node-style-guide)
 
-You can see here a file named ".eslintrc". This is ESLint's config file, where we declare the rules matching with our convension. We would place this file at the root folder of the project. When we open project's folder with Atom or Sublime Text, ESLint will do its task.
+You can see here a file named ".eslintrc". This is ESLint's config file, where we declare the rules matching with our convention. We would place this file at the root folder of the project. When we open project's folder with Atom or Sublime Text, ESLint will do its task.
 
 
 Now, you can get down the repository by using "git clone" command or, simpler, [download it](https://github.com/GreenGlobalDevs/node-style-guide/archive/master.zip). Then, open it with Atom to and browse the JS files under /examples directory.
@@ -78,4 +78,4 @@ In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc"
 
 ## Conclusion
 
-In short, to follow convension, we would need to add 2 config files - .eslintrc and .jsbeautifyrc - into the root of project folder. Thus, the plugins linter-eslint and atom-beautify will handle about 80% of of the work for you.
+In short, to follow convention, we would need to add 2 config files - .eslintrc and .jsbeautifyrc - into the root of project folder. Thus, the plugins linter-eslint and atom-beautify will handle about 80% of of the work for you.
