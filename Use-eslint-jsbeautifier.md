@@ -1,14 +1,14 @@
-# How to use JavaScript style guide
+# Use ESLint and JSBeautifier
 
 ## Table of contents
 
-* [Install eslint](#cài-đặt-eslint)
-* [Install Atom's plugins](#cài-đặt-các-plugins-cho-atom)
+* [Install eslint ](#install-eslint)
+* [Install Atom's plugins ](#install-atoms-plugins)
 * Install Sublime Text's plugins
-* [linter-eslint's configuration](#thiết-lập-cấu-hình-cho-eslint)
-* [atom-beautify's configuration](#thiết-lập-cấu-hình-cho-atom-beautify)
+* [linter-eslint's configuration](#set-eslints-config)
+* [atom-beautify's configuration](#set-jsbeautifiers-config)
 
-#*
+# *
 
 ## Install ESLint
 
@@ -73,13 +73,11 @@ What we need to do here is fix the code until no any red flag shows :)
 If the script file is too long, manual fixing may take a little time, you can use [atom-beautify](https://github.com/Glavin001/atom-beautify) that supports auto formatting.
 
 
-## Thiết lập cấu hình cho atom-beautify
+## Set JSBeautifier's config
 
-In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc". This is config file used by atom-beautify. Each time when you press "Ctrl + Alt + B" key combination, atom-beautify will reformat your source code. This plugin's ability is quite limit so it may leave some of the things that you need to fix by hand.
+In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc". This is config file used by atom-beautify plugin. Each time when you press "Ctrl + Alt + B" key combination, atom-beautify will reformat your source code. This plugin's ability is quite limit so it may leave some of the things that you need to fix by hand.
 
 
 ## Conclusion
 
 In short, to follow convension, we would need to add 2 config files - .eslintrc and .jsbeautifyrc - into the root of project folder. Thus, the plugins linter-eslint and atom-beautify will handle about 80% of of the work for you.
-
-
