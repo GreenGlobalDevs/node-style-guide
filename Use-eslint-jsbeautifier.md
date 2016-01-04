@@ -4,9 +4,9 @@
 
 * [Install eslint ](#install-eslint)
 * [Install Atom's plugins ](#install-atoms-plugins)
-* Install Sublime Text's plugins
-* [ESLint's configuration](#set-eslints-config)
-* [JSBeautifier's configuration](#set-jsbeautifiers-config)
+* [Install Sublime Text's plugins](#install-sublime-texts-plugins)
+* [ESLint configuration](#set-eslints-config)
+* [JSBeautify configuration](#set-jsbeautifys-config)
 
 ## Install ESLint
 
