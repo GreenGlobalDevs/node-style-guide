@@ -15,7 +15,7 @@ https://github.com/GreenGlobalDevs/node-style-guide
 
 #### Video:
 
-[![Use ESLint and JSBeautify with Atom and Sublime Text ](http://img.youtube.com/vi/hwmO5XAuDU0/0.jpg)](http://www.youtube.com/watch?v=hwmO5XAuDU0)
+[![Use ESLint and JSBeautify with Atom and Sublime Text ](http://i.imgur.com/Cpjqct6.png)](http://www.youtube.com/watch?v=hwmO5XAuDU0)
 
 
 
