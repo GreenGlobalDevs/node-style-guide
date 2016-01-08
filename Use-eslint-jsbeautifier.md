@@ -18,7 +18,8 @@ https://github.com/GreenGlobalDevs/node-style-guide
 [![Use ESLint and JSBeautify with Atom and Sublime Text ](http://img.youtube.com/vi/hwmO5XAuDU0/0.jpg)](http://www.youtube.com/watch?v=hwmO5XAuDU0)
 
 
-#### Intro
+
+## Intro
 
 ESLint and JSBeautify are the node.js packages that provide needed engine to check and format code. Primitively, they only have command line interface. But people can build GUI for them - in the format of plugins run on the source code editors like Atom and Sublime Text.
 
