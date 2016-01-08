@@ -9,8 +9,17 @@
 * [ESLint configuration](#set-eslints-config)
 * [JSBeautify configuration](#set-jsbeautifys-config)
 
+#### GitHub repo: 
+
+https://github.com/GreenGlobalDevs/node-style-guide
+
+#### Video:
+
 [![Use ESLint and JSBeautify with Atom and Sublime Text ](http://img.youtube.com/vi/hwmO5XAuDU0/0.jpg)](http://www.youtube.com/watch?v=hwmO5XAuDU0)
 
+
+
+## Intro
 
 ESLint and JSBeautify are the node.js packages that provide needed engine to check and format code. Primitively, they only have command line interface. But people can build GUI for them - in the format of plugins run on the source code editors like Atom and Sublime Text.
 
@@ -135,7 +144,7 @@ If the script file is too long, manual fixing may take a little time, you can us
 
 ## Set JSBeautify's config
 
-In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc". This is config file used by atom-beautify plugin in Atom and JavaScript Beautify in Sublime Text. Each time when you press "Ctrl + Alt + B" or "Ctrl + Alt + F" key combination, these plugins can use JSBeautify core to reformat your source code. Unfortunately, this tool is not very powerful so it may leave some of the things that you need to fix by hand.
+In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc". This is config file used by atom-beautify plugin in Atom and JavaScript Beautify in Sublime Text. Each time when you press "Ctrl + Alt + B" or  "Ctrl + Alt + F"  key combination, these plugins can use JSBeautify core to reformat your source code. Unfortunately, this tool is not very powerful so it may leave some of the things that you need to fix by hand.
 
 
 ## Conclusion

@@ -408,16 +408,6 @@ keys when your interpreter complains:
 *Good:*
 
 ```js
-<<<<<<< HEAD
-var fib = [ 1, 2, 3, 5, 8, 13 ];
-
-var hi = [
-  'hello',
-  'world'
-];
-
-=======
->>>>>>> f9ac9c30dd19af3580d393c4bdf3c8ec8378c7dc
 var fo = {
   good: 'code',
   'is generally': 'pretty',
