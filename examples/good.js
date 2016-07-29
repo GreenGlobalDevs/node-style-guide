@@ -6,8 +6,8 @@
  * Copyright 2016, Green Global Co.,Ltd.
  */
 
-import fs from 'fs';
 import bella from 'bellajs';
+import fs from 'fs';
 
 var store = {};
 var ttl = 15 * 6e4;
@@ -51,15 +51,17 @@ bella.scheduler.every('10m', () => {
   }
   let now = bella.time();
   for (let k in store) {
-    let d = store[k] || null;
-    if (!d) {
-      return null;
-    }
-    let t = d.time;
-    if (now > t) {
-      store[k] = null;
+    if (bella.hasProperty(k, store)) {
+      let d = store[k] || null;
+      if (d) {
+        let t = d.time;
+        if (now > t) {
+          store[k] = null;
+        }
+      }
     }
   }
+  return true;
 });
 
 export var get = (id) => {
@@ -79,7 +81,7 @@ export var fget = (f) => {
     if (!fs.existsSync(f)) {
       return reject(new Error('File not found'));
     }
-    fs.readFile(f, 'utf8', (err, s) => {
+    return fs.readFile(f, 'utf8', (err, s) => {
       if (err) {
         return reject(err);
       }
@@ -131,4 +133,5 @@ export var fdelSync = (f) => {
   if (fs.existsSync(f)) {
     return fs.unlinkSync(f);
   }
+  return null;
 };

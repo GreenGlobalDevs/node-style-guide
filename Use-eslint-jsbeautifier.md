@@ -9,7 +9,7 @@
 * [ESLint configuration](#set-eslints-config)
 * [JSBeautify configuration](#set-jsbeautifys-config)
 
-#### GitHub repo: 
+#### GitHub repo:
 
 https://github.com/GreenGlobalDevs/node-style-guide
 
@@ -99,7 +99,7 @@ With Sublime Text, we also need 3 plugins: [SublimeLinter](http://www.sublimelin
 
 Because Sublime Text does not have built-in package management tool, we need Package Control plugin first. Please follow [the intructions here](https://packagecontrol.io/installation) to install if not yet.
 
-Then, from Sublime Text interface, press "Ctrl + Shift + P" to open Package Control menu, choose "Install Package". 
+Then, from Sublime Text interface, press "Ctrl + Shift + P" to open Package Control menu, choose "Install Package".
 
 ![SublimeText - Install package](http://i.imgur.com/E7nxXcH.png)
 
@@ -124,7 +124,7 @@ Now, please take a look at the repository below:
 
 [https://github.com/GreenGlobalDevs/node-style-guide](https://github.com/GreenGlobalDevs/node-style-guide)
 
-You can see here a file named ".eslintrc". This is ESLint's config file, where we declare the rules matching with our convention. We would place this file at the root folder of the project. When we open project's folder with Atom or Sublime Text, ESLint will do its task.
+You can see here a file named ".eslintrc.json". This is [ESLint's config file](http://eslint.org/docs/user-guide/configuring), where we declare the rules matching with our convention. We would place this file at the root folder of the project. When we open project's folder with Atom or Sublime Text, ESLint will do its task.
 
 
 Now, you can get down the repository by using "git clone" command or, simpler, [download it](https://github.com/GreenGlobalDevs/node-style-guide/archive/master.zip). Then, open it with Atom to and browse the JS files under /examples directory.
