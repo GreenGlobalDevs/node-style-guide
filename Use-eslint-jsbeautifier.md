@@ -124,12 +124,13 @@ Now, please take a look at the repository below:
 
 [https://github.com/GreenGlobalDevs/node-style-guide](https://github.com/GreenGlobalDevs/node-style-guide)
 
-You can see here a file named ".eslintrc.json". This is [ESLint's config file](http://eslint.org/docs/user-guide/configuring), where we declare the rules matching with our convention. We would place this file at the root folder of the project. When we open project's folder with Atom or Sublime Text, ESLint will do its task.
+You can see here a file named "[.eslintrc.json](https://raw.githubusercontent.com/greenglobal/node-style-guide/master/.eslintrc.json)". This is [ESLint's config file](http://eslint.org/docs/user-guide/configuring), where we declare the rules matching with our convention. We would place this file at the root folder of the project. When we open project's folder with Atom or Sublime Text, ESLint will do its task.
 
+The simplest way to configure ESLint is download [.eslintrc.json](https://raw.githubusercontent.com/greenglobal/node-style-guide/master/.eslintrc.json) and place it into your project folder at root.
 
-Now, you can get down the repository by using "git clone" command or, simpler, [download it](https://github.com/GreenGlobalDevs/node-style-guide/archive/master.zip). Then, open it with Atom to and browse the JS files under /examples directory.
+To see how it works, you can get the repository by using "git clone" command or, simpler, [download it](https://github.com/GreenGlobalDevs/node-style-guide/archive/master.zip), then open it with Atom to and browse the JS files under /examples directory.
 
-The following figure, I open the project "node-style-guide" and "examples/bad.js", the result is really bad:
+The following figures, I'm opening the project "node-style-guide" and "examples/bad.js", the result is really bad:
 
 ![Atom: bad.js](http://i.imgur.com/hFoz5LS.png)
 
@@ -149,4 +150,4 @@ In the "node-style-guide" folder, you can see another file named ".jsbeautifyrc"
 
 ## Conclusion
 
-In short, to follow convention, we would need to add 2 config files - .eslintrc and .jsbeautifyrc - into the root of project folder. Thus, the plugins of Atom and Sublime Text will handle about 80% of of the work for you.
+In short, to follow convention, we would need to add 2 config files - .eslintrc.json and .jsbeautifyrc - into the root of project folder. Thus, the plugins of Atom and Sublime Text will handle about 80% of of the work for you.
