@@ -23,7 +23,7 @@ https://github.com/GreenGlobalDevs/node-style-guide
 
 ESLint and JSBeautify are the node.js packages that provide needed engine to check and format code. Primitively, they only have command line interface. But people can build GUI for them - in the format of plugins run on the source code editors like Atom and Sublime Text.
 
-In order to install ESLint and JSBeautify, you must have node.js already. So the first step is go to [nodejs.org](https://nodejs.org) and install latest node.js - 4.2 or 5.3. Rely on your platform, you can download .msi, .pkg or build from source.
+In order to install ESLint and JSBeautify, you must have node.js already. So the first step is go to [nodejs.org](https://nodejs.org) and install latest Node.js core. Rely on your platform, you can download .msi, .pkg or build from source.
 
 
 ## Install ESLint
