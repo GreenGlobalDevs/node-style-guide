@@ -6,6 +6,7 @@
       "binaryLiterals": true,
       "blockBindings": true,
       "defaultParams": true,
+      "experimentalObjectRestSpread": true,
       "forOf": true,
       "generators": true,
       "modules": true,
@@ -50,6 +51,7 @@
       }
     ],
     "init-declarations": 0,
+    "line-comment-position": 0,
     "max-len": [
       "error",
       {
