@@ -120,15 +120,11 @@ Search and install JsFormat:
 
 ## Set ESLint's config
 
-Now, please take a look at the repository below:
+The simplest way to configure ESLint to check your project's coding convention is make use the capability of "[ESLint Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs)" by following the guide here:
 
-[https://github.com/GreenGlobalDevs/node-style-guide](https://github.com/GreenGlobalDevs/node-style-guide)
+- [ESLint shareable config based on Green Global's JavaScript Style Guide](https://github.com/greenglobal/eslint-config-ggc)
 
-You can see here a file named "[.eslintrc.json](https://raw.githubusercontent.com/greenglobal/node-style-guide/master/.eslintrc.json)". This is [ESLint's config file](http://eslint.org/docs/user-guide/configuring), where we declare the rules matching with our convention. We would place this file at the root folder of the project. When we open project's folder with Atom or Sublime Text, ESLint will do its task.
-
-The simplest way to configure ESLint is download [.eslintrc.json](https://raw.githubusercontent.com/greenglobal/node-style-guide/master/.eslintrc.json) and place it into your project folder at root.
-
-To see how it works, you can get the repository by using "git clone" command or, simpler, [download it](https://github.com/GreenGlobalDevs/node-style-guide/archive/master.zip), then open it with Atom to and browse the JS files under /examples directory.
+After everything done, you can [download the examples](https://github.com/GreenGlobalDevs/node-style-guide/archive/master.zip) to see how it works. Extract downloaded .zip file, open it with Atom and browse to the JS files under /examples directory.
 
 The following figures, I'm opening the project "node-style-guide" and "examples/bad.js", the result is really bad:
 
@@ -137,6 +133,22 @@ The following figures, I'm opening the project "node-style-guide" and "examples/
 Sublime Text gives the same result:
 
 ![Sublime Text: bad.js](http://i.imgur.com/YtU7lis.png)
+
+
+#### Use CLI
+
+You can clone this repo to run checking with command line:
+
+```
+git clone https://github.com/greenglobal/node-style-guide.git
+cd node-style-guide
+npm install
+npm run lint
+```
+
+The result looks like this:
+
+![Error while checking convention](http://i.imgur.com/o8QhR9W.png)
 
 What we need to do here is fix the code until no any red flag appears :)
 

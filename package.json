@@ -1,0 +1,16 @@
+{
+  "name": "node-style-guide",
+  "version": "1.0.4",
+  "description": "JavaScript convention at Green Global company",
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "scripts": {
+    "lint": "eslint ./examples"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-ggc": "latest"
+  },
+  "license": "MIT"
+}

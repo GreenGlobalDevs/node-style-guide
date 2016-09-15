@@ -2,6 +2,9 @@
 
 This is a guide for writing consistent and aesthetically pleasing JavaScript code in [Green Global Co.,Ltd](http://greenglobal.vn).
 
+- *NEW* ---> Get [shareable configs](https://github.com/greenglobal/eslint-config-ggc) for this convention.
+
+
 ## Table of contents
 
 ### Formatting
